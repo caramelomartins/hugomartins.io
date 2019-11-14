@@ -9,6 +9,7 @@ script:
 notifications:
   webhooks:
       urls: https://api.netlify.com/build_hooks/$NETLIFY_HOOK_ID
+      on_success: always
       on_failure: never
       on_start: never
       on_cancel: never
