@@ -1,8 +1,7 @@
 baseurl: "http://hugomartins.io/"
 
 title: "Hugo Martins"
-description: "Writings on technology and engineering by Hugo Martins"
-author: "Hugo Martins"
+description: "Writings on technology, engineering and anything in between by Hugo Martins"
 
 contentdir: "content"
 layoutdir: "layout"
@@ -37,3 +36,8 @@ menu:
       url: "/research/"
       weight: -80
 
+enableRobotsTXT: true
+canonifyURLs: true
+
+params:
+  author: "Hugo Martins"
