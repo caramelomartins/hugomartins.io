@@ -5,7 +5,7 @@ categories:
     - music
 ---
 
-An album inspired by the Ten Commandments, composed by Sufjan Stevens and performed by Timo Andres. It was composed to be performed alongside "a dance work choreographed by Justin Peck that premiered with the New York City Ballet in May of 2017".
+An album inspired by the Ten Commandments, composed by Sufjan Stevens and performed by Timo Andres. It was composed to be performed alongside "a dance work choreographed by Justin Peck that premiered with the New York City Ballet in May of 2017". <!--more-->
 
 A continuation of the collaboration between Sufjan Stevens and Justin Peck, started a long time ago, as evidenced by a New Yorker profile [about their collaboration in the world of ballet](https://www.newyorker.com/culture/culture-desk/sufjan-stevens-and-justin-peck-make-a-ballet-about-respect). This album hides a lot of intricacy and melodic undertones in its soothing beauty. I particularly enjoy its ability to fascinate every time I listen to it.
 
