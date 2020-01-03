@@ -7,14 +7,20 @@ Here is a list of some of the projects I have either created or worked on with o
 
 ## Projects
 
+### Active
+
 - [awesome-linters](https://awesome-linters.hugomartins.io) is a community-driven curation effort of the best linting tools available for several programming languages.
 - [dotfiles](https://github.com/caramelomartins/dotfiles) are the .files, scripts and environment setup used in my Ubuntu machine.
 - [candy](https://github.com/caramelomartins/candy) is a minimalistic Hugo theme focused on readability.
 - [Blocked](https://github.com/caramelomartins/Blocked) is a Python implementation of an Access Control application, for Educational Certificates, based on Hyperledger Sawtooth.
-- [polyglot](https://github.com/MiguelPires/polyglot) is a programming language detector written in Python 2.7. I wrote this to fiddle with Python and understand more about it.
 - [hugomartins.io](https://github.com/caramelomartins/website) is this website, a Hugo-based static website.
+
+### Other
+
 - [hackerrank](https://github.com/caramelomartins/hackerrank) is a collection of solutions that I submitted to HackerRank competitions or practice exercises. Mainly PHP, Python, Ruby and Shell scripts.
 - [wifi-password.pl](https://github.com/caramelomartins/wifi-password.pl) is a simple and fast way to get a WiFi password without having to go through Network settings or check the device. It was written in Perl so that I could get the basics of the language.
+- [polyglot](https://github.com/MiguelPires/polyglot) is a programming language detector written in Python 2.7. I wrote this to fiddle with Python and understand more about it.
+- [adventofcode](https://github.com/caramelomartins/adventofcode) is a repository with personal solutions for Advent of Code.
 
 ## Contributions
 
