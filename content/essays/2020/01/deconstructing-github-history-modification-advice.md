@@ -2,9 +2,9 @@
 title: Deconstructing Github's History Modification Advice
 date: 2020-01-07
 draft: true
-summary: ""
+summary: "A deeper analysis of Github's advice for modifying commit author information on a repository."
 authors: Hugo Martins
-categories: []
+categories: ["git"]
 ---
 
 
