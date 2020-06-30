@@ -14,6 +14,7 @@ Here is a list of some of the projects I have either created or worked on with o
 - [candy](https://github.com/caramelomartins/candy) is a minimalistic Hugo theme focused on readability.
 - [Blocked](https://github.com/caramelomartins/Blocked) is a Python implementation of an Access Control application, for Educational Certificates, based on Hyperledger Sawtooth.
 - [hugomartins.io](https://github.com/caramelomartins/website) is this website, a Hugo-based static website.
+- [aether](https://github.com/caramelomartins/aether) is a fork of aether Hugo theme providing Netlify CMS integration.
 
 ### Other
 
