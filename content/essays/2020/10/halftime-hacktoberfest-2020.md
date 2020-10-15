@@ -1,7 +1,7 @@
 ---
 title: "Halftime at Hacktoberfest 2020"
 date: 2020-10-15
-draft: true
+draft: false
 summary: "A small recap of what I've been up to during Hacktoberfest 2020 so far."
 authors: Hugo Martins
 categories: [hacktoberfest]
