@@ -58,27 +58,27 @@ This would convey the correct information about what tests have been collected, 
 Given that I understood the issue, I understood where in the codebase this needed changing and I wanted to contribute, I opened PR [#7875](https://github.com/pytest-dev/pytest/pull/7875) with changes to improve output of `--collect-only`. Apart from changes to documentation and modifying the tests to match the new behavior, I have made changes to `src/_pytest/terminal.py` in function `build_summary_stats_line`, adding the following logic (so far), which is specific to `--collect-only`:
 
 ```python
-        if self.config.getoption("collectonly"):
+if self.config.getoption("collectonly"):
 
-            if self._numcollected == selected:
-                co_output = "%d %s found" % _make_plural(self._numcollected, "test")
-            else:
-                deselected = self._numcollected - selected
-                co_output = f"{selected}/{self._numcollected} tests found ({deselected} deselected)"
+    if self._numcollected == selected:
+        co_output = "%d %s found" % _make_plural(self._numcollected, "test")
+    else:
+        deselected = self._numcollected - selected
+        co_output = f"{selected}/{self._numcollected} tests found ({deselected} deselected)"
 
-            parts = [(co_output, {main_color: True})]
+    parts = [(co_output, {main_color: True})]
 
-            # Sticking with "0/0 tests found (0 deselected)" would be confusing.
-            if self._numcollected == 0:
-                parts = [("no tests found", {_color_for_type_default: True})]
+    # Sticking with "0/0 tests found (0 deselected)" would be confusing.
+    if self._numcollected == 0:
+        parts = [("no tests found", {_color_for_type_default: True})]
 
-            # Sanity check for errors that might have ocurred. Otherwise, it
-            # will never let the user know that an error ocurred during
-            # collection.
-            if errors:
-                color = _color_for_type.get(key, _color_for_type_default)
-                markup = {color: True, "bold": color == main_color}
-                parts = [("%d %s" % _make_plural(errors, "error"), markup)]
+    # Sanity check for errors that might have ocurred. Otherwise, it
+    # will never let the user know that an error ocurred during
+    # collection.
+    if errors:
+        color = _color_for_type.get(key, _color_for_type_default)
+        markup = {color: True, "bold": color == main_color}
+        parts = [("%d %s" % _make_plural(errors, "error"), markup)]
 ```
 
 It is still under review and it might take a bit of time until it gets merged because there are a lot of PRs in `pytest` but I believe this is a good contribution to the project and it was an interesting challenge to go through.
