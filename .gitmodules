@@ -1,3 +1,3 @@
 [submodule "themes/candy"]
 	path = themes/candy
-	url = https://github.com/caramelomartins/candy.git
+	url = git@github.com:caramelomartins/hugo-theme-candy.git
