@@ -35,5 +35,5 @@ It is also a place for me to share information about my projects and whatever I 
 
 ## Colophon
 
-This website is generated using [Hugo](https://gohugo.io/) , a static site generator, with [candy](https://github.com/caramelomartins/candy) as a theme, hosted by [Netlify](https://netlify.com/) , with support from [Cloudflare](https://www.cloudflare.com/). For its typography, it uses [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and [Fira Mono](https://fonts.google.com/specimen/Fira+Mono).
+This website is generated using [Hugo](https://gohugo.io/) , a static site generator, with [candy](https://github.com/caramelomartins/hugo-theme-candy) as a theme, hosted by [Netlify](https://netlify.com/) , with support from [Cloudflare](https://www.cloudflare.com/). For its typography, it uses [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Alegreya](https://fonts.google.com/specimen/Alegreya) and [Fira Mono](https://fonts.google.com/specimen/Fira+Mono).
 
