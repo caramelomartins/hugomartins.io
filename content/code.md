@@ -27,7 +27,7 @@ Here is a list of some of the projects I have either created or worked on with o
 
 ### Tools
 
-- [pytest](https://docs.pytest.org/en/latest/) is a Python testing framework. I started using `pytest` for some of my Python projects and decided to contribute back by fixing up some identified problems in the documentation. I am currently a contributor and a member of the _pytest-dev_ team. ([pytest-3.6.4](https://docs.pytest.org/en/latest/announce/release-3.6.4.html))
+- [pytest](https://docs.pytest.org/en/latest/) is a Python testing framework. I started using `pytest` for some of my Python projects and decided to contribute back by fixing up some identified problems in the documentation. I am currently a contributor and a member of the _pytest-dev_ team. ([pytest-3.6.4](https://docs.pytest.org/en/latest/announce/release-3.6.4.html), [pytest-6.2.0](https://docs.pytest.org/en/latest/announce/release-6.2.0.html))
 - [PyInstaller](https://pyinstaller.readthedocs.io/en/stable/) bundles a Python application and all its dependencies into a single package. I have been a user of the application for a few months and, when Hacktoberfest 2019 came around I thought it would be appropriate to give back. I contributed with some documentation patches and some new hooks that had been requested by the community. ([PyInstaller 3.6](https://pyinstaller.readthedocs.io/en/v3.6/CREDITS.html#contributions-to-pyinstaller-3-6))
 
 ### Documentation
