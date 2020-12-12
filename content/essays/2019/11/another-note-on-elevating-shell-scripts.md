@@ -7,7 +7,7 @@ categories:
     - bash
 ---
 
-A long while ago I wrote about how to [elevate shell scripts](https://hugomartins.io/blog/on-elevating-shell-scripts/) from within the scripts themselves. It was an interesting approach, in which we would recursively run the script as a superuser, if wasn’t already being run as a superuser.
+A long while ago I wrote about how to [elevate shell scripts]({{< ref  "/essays/2017/03/elevate-shell-scripts" >}}) from within the scripts themselves. It was an interesting approach, in which we would recursively run the script as a superuser, if wasn’t already being run as a superuser.
 
 I’ve recently come to figure out that this approach presents problems. It all started when I was refactoring my [dotfiles](https://github.com/caramelomartins/dotfiles) and I started noticing the amount of `sudo`-based commands I was using. I wrote an installation script - `dotfiles.sh` in that repository - which would, among other things, run `apt` and `dpkg`, necessarily requiring superuser permissions. 
 

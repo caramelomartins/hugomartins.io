@@ -17,4 +17,4 @@ Or:
 
 > The platforms are built on the idea that the audience plus the algorithm do all the deciding. No curation, no real promotion, simply the system, grinding away.
 
-This goes back a bit to something I wrote previously on the [impact](https://hugomartins.io/essays/googles-nemesis.../) of [surrendering](https://hugomartins.io/essays/the-webs-future/) all power to tech giants, who are increasingly the web gatekeepers - controlling access to information. We are in the process of surrendering all power of information curation, access and discovery to the same entities, with all the impact and risk that comes with it.
+This goes back a bit to something I wrote previously on the [impact]({{< ref  "/essays/2018/02/googles-nemesis" >}}) of [surrendering]({{< ref  "/essays/2018/03/webs-future" >}}) all power to tech giants, who are increasingly the web gatekeepers - controlling access to information. We are in the process of surrendering all power of information curation, access and discovery to the same entities, with all the impact and risk that comes with it.

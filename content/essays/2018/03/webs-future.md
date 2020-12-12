@@ -5,7 +5,7 @@ draft: false
 summary: Tim Berners-Lee [wrote an open letter](https://www.theguardian.com/commentisfree/2018/mar/12/tim-berners-lee-web-weapon-regulation-open-letter) about the perils of the internet, as it currently stands, and how it is getting increasingly centralized, on the hands of a few selected companies.
 ---
 
-Tim Berners-Lee [wrote an open letter](https://www.theguardian.com/commentisfree/2018/mar/12/tim-berners-lee-web-weapon-regulation-open-letter) about the perils of the internet, as it currently stands, and how it is getting increasingly centralized, on the hands of a few selected companies. This comes from one of the founding fathers of the decentralized *web* to this should be deeply concerning, yet I don't think many people are paying attention. It just reiterates what I have shared last month about ["Google's nemesis..."](https://hugomartins.io/essays/googles-nemesis.../).
+Tim Berners-Lee [wrote an open letter](https://www.theguardian.com/commentisfree/2018/mar/12/tim-berners-lee-web-weapon-regulation-open-letter) about the perils of the internet, as it currently stands, and how it is getting increasingly centralized, on the hands of a few selected companies. This comes from one of the founding fathers of the decentralized *web* to this should be deeply concerning, yet I don't think many people are paying attention. It just reiterates what I have shared last month about ["Google's nemesis..."]({{< ref  "/essays/2018/02/googles-nemesis" >}}).
 
 Major topics from this open letter:
 

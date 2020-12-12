@@ -6,7 +6,7 @@ authors: Hugo Martins
 categories: [pytest, oss, python]
 ---
 
-In this essay, I want to delve deeper into one of the pull-requests I opened in [this year's hacktoberfest](https://hugomartins.io/essays/2020/10/halftime-hacktoberfest-2020/). `pytest` is a great project, for which I have contributed with a few documentation improvements, particularly in the fixtures section, which can been seen in [pytest-3.6.4](https://docs.pytest.org/en/latest/announce/release-3.6.4.html) and above. I have tried contributing to  `pytest` because I've been a happy user for a few years, this project is important in Python's ecosystem and I want to have Python-based projects to practice on, given that I am now doing more Kotlin and Go professionally.
+In this essay, I want to delve deeper into one of the pull-requests I opened in [this year's hacktoberfest]({{< ref  "/essays/2020/10/halftime-hacktoberfest-2020" >}}). `pytest` is a great project, for which I have contributed with a few documentation improvements, particularly in the fixtures section, which can been seen in [pytest-3.6.4](https://docs.pytest.org/en/latest/announce/release-3.6.4.html) and above. I have tried contributing to  `pytest` because I've been a happy user for a few years, this project is important in Python's ecosystem and I want to have Python-based projects to practice on, given that I am now doing more Kotlin and Go professionally.
 
 ## What's in a Problem
 
