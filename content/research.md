@@ -15,9 +15,11 @@ I built [Blocked](https://github.com/caramelomartins/Blocked), which is a proof-
 
 ### Book Chapters
 
+**H. S. Martins** and S. L. Guerreiro, "Access Control Challenges in Enterprise Ecosystems: Blockchain-Based Technologies as an Opportunity for Enhanced Access Control", in *Research Anthology on Blockchain Technology in Business, Healthcare, Education, and Government*, Information Resources Management Association, Eds. Hershey, PA, USA: IGI Global, 2021, pp. 503-528.  [[ResearchGate](https://www.researchgate.net/publication/348127634_Access_Control_Challenges_in_Enterprise_Ecosystems_Blockchain-Based_Technologies_as_an_Opportunity_for_Enhanced_Access_Control)]
+
 **H. S. Martins** and S. L. Guerreiro, "Access Control Challenges in Enterprise Ecosystems: Blockchain-Based Technologies as an Opportunity for Enhanced Access Control", in *Global Cyber Security Labor Shortage and International Business Risk*, Bryan Christiansen and Agnieszka Piekarz, Eds. Hershey, PA, USA: IGI Global, 2019, pp. 51–76.  [[ResearchGate](https://www.researchgate.net/publication/344042710_Access_Control_Challenges_in_Enterprise_Ecosystems_Blockchain-Based_Technologies_as_an_Opportunity_for_Enhanced_Access_Control)]
 
 ### Thesis
 
-**H. S. Martins**, "Exploring Permissioned Blockchains for Decentralizing Access Control", Master’s Thesis, Instituto Superior Técnico, Lisboa, 2018. [[PDF](ttps://www.dropbox.com/s/rqjofllejfytju3/Thesis.pdf?dl=0)] [[ResearchGate](https://www.researchgate.net/publication/344042511_Exploring_Permissioned_Blockchains_for_Decentralizing_Access_Control)]
+**H. S. Martins**, "Exploring Permissioned Blockchains for Decentralizing Access Control", Master’s Thesis, Instituto Superior Técnico, Lisboa, 2018. [[PDF](https://www.dropbox.com/s/rqjofllejfytju3/Thesis.pdf?dl=0)] [[ResearchGate](https://www.researchgate.net/publication/344042511_Exploring_Permissioned_Blockchains_for_Decentralizing_Access_Control)]
 
