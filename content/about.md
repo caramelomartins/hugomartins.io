@@ -30,6 +30,7 @@ It is also a place for me to share information about my projects and whatever I 
 - StackOverflow:  [Hugo Martins](https://stackoverflow.com/users/6461671)
 - LinkedIn: [Hugo Martins](https://www.linkedin.com/in/hugofcsmartins/)
 - ResearchGate: [Hugo Martins](https://www.researchgate.net/profile/Hugo_Martins34)
+- Twitter: [caramelomartins](https://twitter.com/caramelomartins)
 
 ## Colophon
 
