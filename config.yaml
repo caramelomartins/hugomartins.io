@@ -41,3 +41,4 @@ canonifyURLs: true
 
 params:
   author: "Hugo Martins"
+  plausible: hugomartins.io
