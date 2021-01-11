@@ -3,32 +3,35 @@ title: "Building a Private Terraform Registry"
 date: 2021-01-12
 draft: false
 authors: Hugo Martins
+summary: In this essay I go through a few steps that describe how to implement a read-only private Terraform registry, serving custom providers privately to be used with Terraform, using Python and Flask.
 categories: [python, terraform]
 ---
 
-Recently, I wanted to find a way to use a custom provider in Terraform without storing in in Terraform's public registry. I was baffled when I found out that, yes, there are ways to load custom providers in Terraform from a local file system, there is no way of  distributing it that doesn't rely on storing the provider in [registry.terraform.io](https://registry.terraform.io/).
+Recently, I wanted to find a way to use a custom provider in Terraform without storing in in Terraform's official registry. I was baffled when I found out that, yes, there are ways to load custom providers in Terraform from a local file system, no way exists of  distributing it that doesn't rely on storing the provider in [registry.terraform.io](https://registry.terraform.io/).
 
-I searched online and found a two open-source registries: [citizen](https://github.com/outsideris/citizen) and [anthology](https://github.com/erikvanbrakel/anthology). None of these are usable for me because both can only serve Terraform modules and I want to serve Terraform custom providers.
+I searched online and found two open-source registries: [citizen](https://github.com/outsideris/citizen) and [anthology](https://github.com/erikvanbrakel/anthology). None of these are usable for me because both can only serve Terraform modules and I want to serve Terraform custom providers. It seems that using private Terraform registries seems to be more common for distributing modules rather than custom providers.
 
-Fortunately, Terraform _does_ provide a specification of the protocol we can use for Terraform. With the help of an awesome colleague to understand how it works I ended up implementing my own private Terraform Registry, with Python and Flask ([rekisteri](https://github.com/caramelomartins/rekisteri)). 
+Fortunately, Terraform _does_ provide a specification of the protocol that we can use for distributing custom providers that Terraform can then use. With the help of [an awesome colleague](https://www.linkedin.com/in/nunoadrego/) to understand how it works I ended up implementing my own private Terraform Registry, with Python and Flask ([rekisteri](https://github.com/caramelomartins/rekisteri)).
 
-In this article, we'll go through Terraform's Provider Registry Protocol and how you too can build a private Terraform Registry. You'll learn more about Terraform, Flask and Python.
+In this article, we'll go through Terraform's Provider Registry Protocol and will understand how you too can build a private Terraform Registry. You'll learn more about Terraform, Flask and Python.
 
 ## Background
 
-Terraform is an incredible tool to manage infrastructure. It is backed by a strong community and it has a [public registry](https://registry.terraform.io/) where we can find tooling to suit almost every single need from AWS to Kubernetes, to lesser known platforms. Hashicorp's public registry has some very high profile providers, which is what enables Terraform to interact with such a diverse set of platforms. It also has a big collection of modules, which allows Terraform users to share and organize configuration in Terraform.
+Terraform is an incredible tool to manage infrastructure. It is backed by a strong community and it has a public registry at [registry.terraform.io](https://registry.terraform.io/), where we can find tooling to fullfil almost every single need from AWS to Kubernetes, to lesser known platforms. Terraform's registry has some very high profile providers, which is what enables Terraform to interact with such a diverse set of platforms. It also has a big collection of modules, which allows Terraform users to share and organize configuration in Terraform.
 
-Terraform is built on a plugin architecture, which means that it allows, and encourages, developers to build their own plugins to interact with Terraform. [Provider Plugins](https://www.terraform.io/docs/plugins/provider.html), for example, allow developers to build their own custom providers to interact with their internal infrastructure or in-house tools. Unfortunately, Terraform doesn't provide a way to distribute these custom providers privately. I find this shameful because you don't always want to open-source your custom provider, for a myriad of reasons. You can have a private module registry via Terraform Cloud but Hashicorp doesn't provide a private registry for providers.
+Terraform is built on a plugin architecture, which means that it allows, and encourages, developers to build their own plugins to interact with Terraform. [Provider Plugins](https://www.terraform.io/docs/plugins/provider.html), for example, allow developers to build their own custom providers to interact with their internal infrastructure or in-house tools. It is perfectly understandable that we might want to develop a custom provider to interact with in-house tooling for infrastructure - in fact, I've actually built two already.
 
-From Hashicorp:
+Unfortunately, Terraform doesn't provide a way to distribute these custom providers in a private way. I find this shameful because you don't always want to open-source your custom provider, for a myriad of reasons, from business reasons to security reasons. You can have a private module registry by using Terraform Cloud but Hashicorp doesn't provide a private registry for providers, as far as I know. From Hashicorp:
 
 > The Terraform open source project does not provide a server implementation, but we welcome community members to create their own private registries by following the published protocol.
 
-Fortunately, Terraform _does_ provides information about the protocol they use for their public registry in [Provider Registry Protocol](https://www.terraform.io/docs/internals/provider-registry-protocol.html). Although it has very little information, it serves as an interesting baseline to implement an open-source private Terraform Registry that can be used to serve custom plugins, or simply forks of existing plugins with modifications.
+Fortunately, Terraform _does_ provide information about the protocol they use for their public registry in [Provider Registry Protocol](https://www.terraform.io/docs/internals/provider-registry-protocol.html). This means that they provide all the necessary information that allows developers to build a private Terraform registry with which Terraform can interact. Although it has very little information, it serves as an interesting baseline to implement an open-source private Terraform Registry that can be used to serve custom plugins, or simply forks of existing plugins with modifications.
 
 ## Terraform's Provider Registry Protocol
 
-Terraform's Provider Registry Protocol starts with service discovery, achieve through a particular endpoint. When loading up a given provider, Terraform will contact the provider's hostname and request for the implementations of any of its protocols with `GET <hostname>/.well-known/terraform.json`. This endpoint should return a JSON response with information about where the APIs can be found. This means we can have a registry that servs both modules and providers, or it can serve only one of those.
+_Note: All of this was written considering Terraform 0.13 or higher._
+
+Terraform's Provider Registry Protocol starts with service discovery, which happens through a particular endpoint. When loading up a given provider, Terraform will contact the provider's hostname and request for the implementations of any of its protocols with `GET <hostname>/.well-known/terraform.json`. This endpoint should return a JSON response with information about where the APIs can be found. This means we can have a registry that serves both modules and providers, or it can serve only one of those. 
 
 An example from Terraform:
 
@@ -40,7 +43,7 @@ An example from Terraform:
 
 Terraform's Provider Registry Protocol also establishes two further operations: [_List Available Versions_](https://www.terraform.io/docs/internals/provider-registry-protocol.html#list-available-versions) and [_Find a Provider Package_](https://www.terraform.io/docs/internals/provider-registry-protocol.html#find-a-provider-package).
   
-_List Available Versions_ allows us to query for existing versions of a given provider based on a `namespace` and a `name` with `GET <hostname>/<prefix>/<namespace>/<name>/versions`. _Find a Provider Package_  allows Terraform to get information about where to download a particular package of a provider based on the platform (OS and Architecture) with `GET <hostname>/<prefix>/<namespace>/<name>/<version>/download/<os>/<arch>`.
+_List Available Versions_ allows  Terraform to query for existing versions of a given provider based on a `namespace` and a `name` with `GET <hostname>/<namespace>/<name>/versions`. _Find a Provider Package_  allows Terraform to get information about where to download a particular package of a provider based on the platform (OS and architecture) with `GET <hostname>/<namespace>/<name>/<version>/download/<os>/<arch>`.
 
 No further information can be found from Terraform's documentation but this is a great starting point for creating a read-only private Terraform Registry. In fairness, all that's necessary for someone implementing the protocol is to known how Terraform interacts with the registry. All of the remaining bits of what a functional registry should do (e.g. have a way to store and manipulate metadata) can be left to the discretion of who implements it.
 
@@ -68,9 +71,9 @@ def discovery():
     return {"providers.v1": "/v1/providers/"}
 ```
 
-Since we only want to implement the Providers Registry Protocol, we'll only serve `providers.v1`, as explained in the documentation.
+Since we only want to implement the Provider's Registry Protocol, we'll only serve `providers.v1`, as explained in the documentation.
 
-We now want to create a basic metadata file that has all the necessary information that we need to serve to Terraform. We'll use Hashicorp's `random` provider for this example:
+We now want to create a basic metadata file that has all the necessary information that we need to serve this information to Terraform. We'll use Hashicorp's `random` provider for this example:
 
 ```json
 {
@@ -110,9 +113,9 @@ We now want to create a basic metadata file that has all the necessary informati
 
 This metadata structure follows Hashicorp's metadata requirements. It has a `versions` list as the root object for the metadata. Each version needs to have a `version`, a list of accepted `protocols` and a list of  `platforms` that will contain all the necessary metadata to download a specific provider's version. For each platform, we need to specify: `os`, `arch`, `filename`, `download_url`, `shasums_url` and `shasums_signature_url`, and `signing_keys`. All of these are extensively documented in Terraform's Provider Registry Protocol. 
 
-By executing a `GET` with each URL, we can see examples of what each URL needs to offer in order for Terraform to work as intended. Notice that none of these URLs need to be served by the registry itself. They only need to be available to receive requests from when you run `terraform init`.
+By executing a `GET` with each URL, we can see examples of what each URL needs to offer in order for Terraform to work properly. Notice that none of these URLs need to be served by the registry itself. They only need to be available to receive requests from when you run `terraform init`.
 
-We store the above metadata file in a directory named `providers`, at the same level as `main.py`. Each namespace has it own sub-directory and the filename must be the same as the name of the provider to which the metadata belongs to. As an example, again with `random`:
+We store the above metadata file in a directory named `providers`, at the same level as `main.py`. Each namespace has it own sub-directory and the filename, that stores the metadata, must be the same as the name of the provider to which the metadata belongs to. As an example, again with `random`:
 
 ```shell
 $ tree
@@ -201,7 +204,7 @@ terraform {
 }
 ```
 
-`9af044367099.ngrok.io` refers to an `ngrok` endpoint that I created to test this out. `terraform init` requires that provider registries are served via HTTPS, which means that a simple development server won't function properly for testing. I used `ngrok` to proxy requests to Flask's development server but you can do whatever works for you. Below instructions will assume that there's some kind of proxy to Flask.
+`9af044367099.ngrok.io` refers to an `ngrok` endpoint that I created to test this out. `terraform init` requires that registries are served via HTTPS, which means that a simple development server won't function properly for testing. I used `ngrok` to proxy requests to Flask's development server but you can do whatever works for you. Below instructions will assume that there's some kind of proxy to Flask.
 
 Let's fire up Flask's server:
 
@@ -235,10 +238,10 @@ In the above case, I have `https://9af044367099.ngrok.io/` redirecting all reque
 
 ## Conclusion
 
-This is it. We've built a private registry that we can use with Terraform to serve custom Terraform providers that are stored somewhere outside Terraform's official registry. Granted that this has _very_ limited functionality, it can't even create new versions of providers or new providers dynamically but you can always simply add or update files and those will be served by this API. There are some interesting challenges for future implementation: 
+This is it. We've built a private registry that we can use with Terraform to serve custom Terraform providers that are stored somewhere outside Terraform's official registry. Obviously, this has _very_ limited functionality. It can't even create new versions of providers or new providers dynamically but you can always simply add or update files and those will be served by this API. There are some interesting challenges for future implementations or improvements:
 
-* Serving this with an HTTPS server instead of relying on `ngrok`. 
-* Implementing a way to manipulate metadata to create new providers and versions. This would mean having more endpoints for `POST` and `PUT` verbs. 
+* Serving this with an HTTPS server instead of relying on `ngrok`.
+* Implementing a way to manipulate metadata to create new providers and versions. This would mean having more endpoints for `POST` and `PUT` verbs.
 * Implement more backends for metadata such as PostgreSQL, SQLite and S3.
 
-If you are interested, you can see all of this implemented in [rekisteri@b0753040](https://github.com/caramelomartins/rekisteri/tree/b07530407b94c4e6e61fb77d1a1572952fe8ee2a). Alternatively, you can try to build your own and share the adventure! I will aim at introducing at least the above improvements in [rekisteri](https://github.com/caramelomartins/rekisteri/tree/b07530407b94c4e6e61fb77d1a1572952fe8ee2a) in order to make this more useful.
+If you are interested, you can see all of this implemented in [rekisteri@b0753040](https://github.com/caramelomartins/rekisteri/tree/b07530407b94c4e6e61fb77d1a1572952fe8ee2a). Alternatively, you can try to build your own and share the adventure! I will aim at introducing at least the above improvements in [rekisteri](https://github.com/caramelomartins/rekisteri/tree/b07530407b94c4e6e61fb77d1a1572952fe8ee2a) in order to make it more useful.
