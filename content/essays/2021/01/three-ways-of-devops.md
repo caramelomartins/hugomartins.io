@@ -2,7 +2,7 @@
 title: "Three Ways of DevOps: Improving Your DevOps"
 date: 2021-01-19
 draft: false
-summary: A recap of the Three Ways of DevOps, as seen in the DevOps Handbook. In this essay we'll understand what _The Principles of Flow_, _The Principles of Feedback_ and _The Principles of Continual Learning_ represent in DevOps.
+summary: A recap of the Three Ways of DevOps, as seen in the DevOps Handbook. In this essay we'll go through _The Principles of Flow_, _The Principles of Feedback_ and _The Principles of Continual Learning_, and what they represent in DevOps.
 authors: Hugo Martins
 categories: [ devops ]
 ---
