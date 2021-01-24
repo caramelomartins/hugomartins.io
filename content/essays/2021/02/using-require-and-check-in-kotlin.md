@@ -6,11 +6,13 @@ authors: Hugo Martins
 categories: ["kotlin", "kotest"]
 ---
 
-`require` and `check`are two functions from Kotlin's standard library that you can use to perform assertions on specific requirements and states that we wish to have at a given time.  Here we'll understand how we can use them and why. <!--more-->
+I've been reading [Effective Kotlin](https://leanpub.com/effectivekotlin) by Marcin Moskala, in order to improve my knowledge of the Kotlin programming language beyond what is taught by a multitude of tutorials online. By reading _Effective Kotlin_ I can learn some advice from someone that has battle-tested Kotlin and can provide insights into features of the language that potentially I might have missed yet.
+
+One of those features that made sense to me was using `require` and `check`,  two functions from Kotlin's standard library. You can use both these functions to perform assertions on specific requirements and states that we wish to have at a specific time.
 
 ## `require`
 
-`require`, along with `requireNotNull`, can be used to require that a given condition is true. In the case of `require`  it will take a `Boolean` type as an argument while in the case of `requireNotNull` it will take a type as an argument. Both functions will throw a `IllegalArgumentException` if the conditions are not met - `false` in `require` or `null` in `requireNotNull`.
+`require`, along with `requireNotNull`, can be used to require that a given condition is true. In the case of `require`  it will take a `Boolean` type as an argument while in the case of `requireNotNull` it will take a type as an argument. Both functions will throw an `IllegalArgumentException` if the conditions are not met - `false` in `require` or `null` in `requireNotNull`.
 
 From `require`'s [official documentation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/require.html):
 
@@ -26,7 +28,7 @@ fun getIndices(count: Int): List<Int> {
 println(getIndices(3)) // [1, 2, 3]
 ```
 
-In this example, if we try to call `getIndices` with an index lower than 0, it will throw an `IllegalArgumentException`. Using this functions is important in order to validate arguments that are passed to functions in a idiomatic way.  Since validating arguments is considered a _best practice_, even if the arguments are thoroughly documented, to produce clean, maintainable and secure code, using these functions can help us do that.
+In this example, if we try to call `getIndices` with an index lower than 0, it will throw an `IllegalArgumentException`. Using this functions is important to validate arguments that are passed to functions in an idiomatic way.  Since validating arguments is considered a _best practice_, even if the arguments are thoroughly documented - to produce clean, maintainable and secure code - using these functions can help us do that.
 
 ## `check`
 
@@ -52,7 +54,7 @@ someState = "non-empty-state"
 println(getStateValue()) // non-empty-state
 ```
 
-In this example, we can see usage of both `check` and `checkNotNull`. Before returning the value of  `state` it uses: `checkNotNull` to validate that `someState` is not null and then it uses `check` to validate that `isNotEmpty()` doesn't return `false`. If any of these doesn't meet the criteria, it will throw an `IllegalStateException`.  Again, this is a great, idiomatic way of performing validation on state in Kotlin code.
+In this example, we can see usage of both `check` and `checkNotNull`. Before returning the value of  `state` it uses: `checkNotNull` to validate that `someState` is not null and then it uses `check` to validate that `isNotEmpty()` doesn't return `false`. If any of these doesn't meet the criteria, it will throw an `IllegalStateException`.  Again, this is a great, idiomatic way of performing validation on state in Kotlin.
 
 ## Conclusion
 
