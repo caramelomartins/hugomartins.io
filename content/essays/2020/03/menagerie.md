@@ -1,5 +1,5 @@
 ---
-title: "Menagerie"
+title: "'Menagerie'"
 date: 2020-03-30T21:01:26+01:00
 draft: false
 summary: "An upbeat soulful album from the master Bill Withers."

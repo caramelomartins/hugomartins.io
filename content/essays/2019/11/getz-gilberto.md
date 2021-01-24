@@ -1,5 +1,5 @@
 ---
-title: "Getz/Gilberto"
+title: "'Getz/Gilberto'"
 date: 2019-11-13
 categories:
     - music

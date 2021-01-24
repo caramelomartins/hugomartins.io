@@ -1,5 +1,5 @@
 ---
-title: "The Decalogue"
+title: "'The Decalogue'"
 date: 2019-12-23
 categories:
     - music

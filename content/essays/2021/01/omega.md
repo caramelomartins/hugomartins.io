@@ -1,5 +1,5 @@
 ---
-title: "Omega"
+title: "'Omega'"
 date: 2021-01-16
 draft: false
 summary: "A powerful, vibrant and eclectic debut album from a young Immanuel Wilkins."
