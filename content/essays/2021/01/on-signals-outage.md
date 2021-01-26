@@ -2,7 +2,7 @@
 title: "On Signal's Outage"
 date: 2021-01-26
 draft: false
-summary: ""
+summary: "Last January 15th, Signal had an outage of epic proportions. A surge in new users using Signal along with some infrastructure and software issues seems to have broken it. When these things happen, what is left to users?"
 authors: Hugo Martins
 categories: ["infrastructure"]
 ---
