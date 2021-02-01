@@ -3,7 +3,7 @@ title: "Using require and check Functions in Kotlin"
 date: 2021-02-02
 draft: false
 authors: Hugo Martins
-categories: ["kotlin", "kotest"]
+categories: ["kotlin"]
 ---
 
 I've been reading [Effective Kotlin](https://leanpub.com/effectivekotlin) by Marcin Moskala, in order to improve my knowledge of the Kotlin programming language beyond what is taught by a multitude of tutorials online. By reading _Effective Kotlin_ I can learn some advice from someone that has battle-tested Kotlin and can provide insights into features of the language that I have potentially missed.
