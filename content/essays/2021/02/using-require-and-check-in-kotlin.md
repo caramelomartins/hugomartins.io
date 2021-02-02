@@ -2,6 +2,7 @@
 title: "Using require and check Functions in Kotlin"
 date: 2021-02-02
 draft: false
+summary: A quick introduction to `require` and `check` functions, as well as examples of how and why we should use them. 
 authors: Hugo Martins
 categories: ["kotlin"]
 ---
