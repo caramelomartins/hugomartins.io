@@ -9,7 +9,7 @@ categories: [ kotlin, immutability ]
 
 Coming from a background of Python and PHP, I'm used to interpreted loosely typed languages in which declaring variables is done in an almost frivolous way. Suffice it to say, when I started writing Kotlin, I was a bit confused about the fact that there are two different ways of declaring essentially the same variables. Even when I wrote C#, back in the day, I never encountered anything similar to this.
 
-Those declarations didn't differ in type or visibility but rather on their mutability. Kotlin has quite a diverse offering of built-in functionality that encourages immutability. One of those is declaring properties with `val` and `var`. Bu what's the difference between `val` and `var` then?
+Those declarations didn't differ in type or visibility but rather on their mutability. Kotlin has quite a diverse offering of built-in functionality that encourages immutability. One of those is declaring properties with `val` and `var`. But what's the difference between `val` and `var` then?
 
 `val` is a keyword in Kotlin that allows us to define properties as read-only. Because they are read-only, they cannot be modified. `var`, on the other hand,  is a keyword that can be used to declare properties in Kotlin that are mutable. These properties are not read-only (as with `val`) and they can be modified at will.
 
