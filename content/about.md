@@ -23,11 +23,8 @@ It is also a place for me to share information about my projects and whatever I 
 
 ## Elsewhere
 
-- Github: [caramelomartins](https://github.com/caramelomartins),
+- Github: [caramelomartins](https://github.com/caramelomartins)
 - Goodreads:  [Hugo Martins](https://www.goodreads.com/user/show/7832126-hugo-martins)
-- Trakt: [caramelomartins](https://trakt.tv/users/caramelomartins)
-- HackerNews: [caramelomartins](https://news.ycombinator.com/user?id=caramelomartins) 
-- StackOverflow:  [Hugo Martins](https://stackoverflow.com/users/6461671)
 - LinkedIn: [Hugo Martins](https://www.linkedin.com/in/hugofcsmartins/)
 - ResearchGate: [Hugo Martins](https://www.researchgate.net/profile/Hugo_Martins34)
 - Twitter: [caramelomartins](https://twitter.com/caramelomartins)
