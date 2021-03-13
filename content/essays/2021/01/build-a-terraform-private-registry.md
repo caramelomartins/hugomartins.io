@@ -5,6 +5,7 @@ draft: false
 authors: Hugo Martins
 summary: In this essay I go through a few steps that describe how to implement a read-only private Terraform registry, serving custom providers privately to be used with Terraform, using Python and Flask.
 categories: [python, terraform]
+popular: true
 ---
 
 Recently, I wanted to find a way to use a custom provider in Terraform without storing in in Terraform's official registry. I was baffled when I found out that, yes, there are ways to load custom providers in Terraform from a local file system, no way exists of  distributing it that doesn't rely on storing the provider in [registry.terraform.io](https://registry.terraform.io/).

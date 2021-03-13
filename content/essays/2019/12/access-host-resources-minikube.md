@@ -3,6 +3,7 @@ title: "How to Access Host Resources in Minikube Pods?"
 date: 2019-12-31
 categories:
   - minikube
+popular: true
 ---
 
 This title is self-explanatory but, in any case, how can I access host resources in `minikube`? It seems straightforward but after digging up through the internet, it seems that it isn't as easy as it ought to be. <!--more-->

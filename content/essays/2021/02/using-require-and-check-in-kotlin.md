@@ -5,6 +5,7 @@ draft: false
 summary: A quick introduction to `require` and `check` functions, as well as examples of how and why we should use them. 
 authors: Hugo Martins
 categories: ["kotlin"]
+popular: true
 ---
 
 I've been reading [Effective Kotlin](https://leanpub.com/effectivekotlin) by Marcin Moskala, in order to improve my knowledge of the Kotlin programming language beyond what is taught by a multitude of tutorials online. By reading _Effective Kotlin_ I can learn some advice from someone that has battle-tested Kotlin and can provide insights into features of the language that I have potentially missed.

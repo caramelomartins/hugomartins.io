@@ -6,6 +6,7 @@ summary: This essay is a slightly extended version of a [comment](https://github
 categories:
   - oss
   - python
+popular: true
 ---
 
 This essay is a slightly extended version of a [comment](https://github.com/pyinstaller/pyinstaller/issues/2389#issuecomment-476414044) I made on `PyInstaller`'s official repository, regarding `PyInstaller` and `PyFiglet` integration, as well as some known issues.
