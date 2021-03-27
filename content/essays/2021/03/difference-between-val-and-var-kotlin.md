@@ -5,6 +5,7 @@ draft: false
 summary:  "`val` and `var` forced a mentally shift on me, coming from a background of loosely typed languages, due to what they entails. What is really the difference between `val` and `var`?"
 authors: Hugo Martins
 categories: [ kotlin, immutability ]
+popular: true
 ---
 
 Coming from a background of Python and PHP, I'm used to interpreted loosely typed languages in which declaring variables is done in an almost frivolous way. Suffice it to say, when I started writing Kotlin, I was a bit confused about the fact that there are two different ways of declaring essentially the same variables. Even when I wrote C#, back in the day, I never encountered anything similar to this.
