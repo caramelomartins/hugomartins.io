@@ -5,8 +5,6 @@ draft: false
 summary: SSL is a mess, sometimes. It is increasingly important, yet it is also hellishly difficult to debug and, if not perfectly understood, it seems that it can also be a pain to implement correctly. With the rise of automated tooling to help with implementation and management of SSL (certificate-wise and more), we have seen an increase of encryption usage in our HTTP connections ([1], [2]).
 categories:
     - cryptography
-tags:
-    - tls
 ---
 
 SSL is a mess, sometimes. It is increasingly important, yet it is also hellishly difficult to debug and, if not perfectly understood, it seems that it can also be a pain to implement correctly. With the rise of automated tooling to help with implementation and management of SSL (certificate-wise and more), we have seen an increase of encryption usage in our HTTP connections ([1], [2]).

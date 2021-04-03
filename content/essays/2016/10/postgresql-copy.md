@@ -1,6 +1,7 @@
 ---
 title: Extracting Data from PostgreSQL
 date: "2016-10-10T00:00:00"
+aliases: ["/blog/extracting-data-from-postgresql/"]
 category:
   - snippets
   - postgresql

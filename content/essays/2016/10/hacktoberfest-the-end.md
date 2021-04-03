@@ -1,6 +1,7 @@
 ---
 title: Hacktoberfest - The End
 date: "2016-10-31T00:00:00"
+aliases: ["/essays/hacktoberfest-the-end/", "/blog/hacktoberfest-the-end/"]
 category:
   - oss
 ---

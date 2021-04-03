@@ -3,6 +3,7 @@ title: "FOSDEM 2019 - A Review"
 date: 2019-02-14T23:00:00+00:00
 draft: false
 summary: This year I decided to make the trip to Belgium and attend FOSDEM 2019, on February 2 and 3. I have an affection for _open source_ software and I, obviously, had an interest in seeing the conference. I was also curious to understand what the environment would feel like, at a big conference - never have I went to anything larger than 500 people.
+aliases: ["/essays/fosdem-2019-a-review/", "/blog/fosdem-2019-a-review/"]
 categories:
   - oss
   - conferences

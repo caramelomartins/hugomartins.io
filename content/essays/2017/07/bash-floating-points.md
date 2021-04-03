@@ -4,8 +4,6 @@ date: 2017-07-11T23:10:42+01:00
 draft: false
 categories:
     - bash
-tags:
-    - floating-points
 ---
 
 This week I was working on HackerRank's [Arithmetic Operations](https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations). Turns out, to my surprise, that Bash **does not** support floating point operations. I had no idea.

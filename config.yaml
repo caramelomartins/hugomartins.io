@@ -1,7 +1,6 @@
 baseurl: "https://hugomartins.io/"
 
 title: "Hugo Martins"
-description: "Writings on technology, engineering and anything in between by Hugo Martins"
 
 contentdir: "content"
 layoutdir: "layout"
@@ -36,9 +35,20 @@ menu:
       url: "/research/"
       weight: -80
 
+    - name: "Categories"
+      identifier: "categories"
+      url: "/categories/"
+      weight: -70
+
 enableRobotsTXT: true
 canonifyURLs: true
 
 params:
   author: "Hugo Martins"
   plausible: hugomartins.io
+  description: "Writings on technology, engineering and anything in between by Hugo Martins."
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

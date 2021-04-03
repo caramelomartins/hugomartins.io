@@ -3,11 +3,10 @@ title: "contributing to pytest"
 date: 2018-08-16T23:00:00+00:00
 draft: false
 summary: A tale of contributing to `pytest` and becoming a member of the [pytest-dev](https://github.com/pytest-dev) organization.
+aliases: ["/essays/contributing-to-pytest/", "/blog/contributing-to-pytest/"]
 categories:
   - python
   - oss
-tags:
-  - pytest
 ---
 
 A few weeks back, I started collaborating on a project that I had just recently been using. I started writing Python and need a test framework to go along with it. After searching for a bit online, I found out that `pytest` [1] is currently an alternative to the standard `unittest` [2]. By looking at the examples I felt that `pytest` was less verbose and less cumbersome than `unittest` so I started using it and was quickly fascinated. This is a post about how I started contributing to `pytest`. I’ve considered not writing this as it seems to be too personal for people to want to know but this is my blog after all.

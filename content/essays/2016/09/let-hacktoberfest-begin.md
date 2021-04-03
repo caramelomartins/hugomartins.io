@@ -1,6 +1,7 @@
 ---
 title: Let Hacktoberfest Begin!
 date: "2016-09-30T00:00:00"
+aliases: ["/essays/let-hacktoberfest-begin/", "/blog/let-hacktoberfest-begin/"]
 category:
   - oss
 ---

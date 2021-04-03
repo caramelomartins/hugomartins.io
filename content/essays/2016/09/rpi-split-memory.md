@@ -1,6 +1,7 @@
 ---
 title: GPU Memory Splitting on Raspbian Jessie
 date: "2016-09-05T00:00:00"
+aliases: ["/blog/gpu-memory-splitting-on-raspbian-jessie/"]
 category:
   - helpers
   - raspberry pi

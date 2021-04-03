@@ -2,6 +2,7 @@
 date: "2017-03-27T00:17:46Z"
 title: "On Elevating Shell Scripts"
 draft: false
+aliases: ["/blog/on-elevating-shell-scripts/"]
 categories:
     - bash
 
