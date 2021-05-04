@@ -4,7 +4,7 @@ date: 2020-11-07
 summary: "A small account of contributing with improvements to pytest's 'collect-only' functionality. I have made a few changes in the way pytest processes the results of test collection, when using 'collect-only', based on feedback from an issue that was reported to pytest."
 authors: Hugo Martins
 categories: [pytest, oss, python]
-popular: true
+popular: false
 ---
 
 In this essay, I want to delve deeper into one of the pull-requests I opened in [this year's hacktoberfest]({{< ref  "/essays/2020/10/halftime-hacktoberfest-2020" >}}). `pytest` is a great project, for which I have contributed with a few documentation improvements, particularly in the fixtures section, which can been seen in [pytest-3.6.4](https://docs.pytest.org/en/latest/announce/release-3.6.4.html) and above. I have tried contributing to  `pytest` because I've been a happy user for a few years, this project is important in Python's ecosystem and I want to have Python-based projects to practice on, given that I am now doing more Kotlin and Go professionally.
