@@ -7,7 +7,7 @@ categories: [kubecon, kubernetes]
 summary: "Stream of consciousness notes about my experience during KubeCon Europe 2021 and cool things I've learned or enjoyed."
 ---
 
-![kubecon-logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fevents.linuxfoundation.org%2Fwp-content%2Fuploads%2F2020%2F10%2FKubeCon_EU_2021_snackable-1.jpg&f=1&nofb=1)
+![kubecon-logo](https://raw.githubusercontent.com/cncf/artwork/master/other/kubecon-cloudnativecon/2021-eu-virtual/color/kubecon-eu-2021-color.png)
 
 These will be a series of notes written as a _stream of consciousness_ without much editing. This year's edition of KubeCon Europe was once again completely virtual. Although there was some confusion with understanding the platform, setting up a calendar and finding where all the sessions were occurring (e.g. co-located events run on their platforms), this first day was interesting and instructive.
 
