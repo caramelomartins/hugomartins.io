@@ -1,5 +1,5 @@
 ---
-title: "KubeCon Europe 2021: Notes  #1"
+title: "KubeCon Europe 2021: Highlights  #1"
 date: 2021-05-04T15:04:59+01:00
 draft: false
 authors: Hugo Martins
