@@ -5,6 +5,7 @@ draft: false
 summary:  "A potentially exaggerated exploration of how Kotlin implements `List` and `MutableList`, featuring Kotlin's source code examples."
 authors: Hugo Martins
 categories: [ kotlin, immutability ]
+popular: true
 ---
 
 I've been thinking about immutability a lot...interesting, I know. I can almost feel your excitement through this screen! In particular, I've been trying to investigate and learn ways in which you can break immutability in Kotlin, either knowingly or unknowingly. My last attempt involves casting immutable lists as mutable lists, in order to modify a _supposedly_ immutable list into a mutable one. While I have been unsuccessful in my attempts, with the particulars of what I want to do, I learned quite an interesting amount about what makes a `List` different from a `MutableList`, and I'll share a bit more about what I've learned here.

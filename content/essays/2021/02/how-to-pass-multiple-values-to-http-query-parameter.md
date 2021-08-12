@@ -5,6 +5,7 @@ draft: false
 summary: "A quick exploration of RFC3986 (\"Uniform Resource Identifier (URI): Generic Syntax\") Section 3.4."
 authors: Hugo Martins
 categories: ["http", "rfcs"]
+popular: true
 ---
 
 While writing REST APIs, I've frequently needed to pass multiple values for the same parameter in a query string. In particular, this happens when using `GET` requests and we want to, for example, pass a filter of identifiers to the particular request. At first, it appears simple but it is actually undefined behavior in terms of what the HTTP standards specify. For clarity, a query string is a string attached to an HTTP URL specifying values for particular parameters, allowing us to pass data in a request. For example, in `https://example.com/api/examples?id=123`, the string `?id=123` would be a query string.
