@@ -35,11 +35,6 @@ menu:
       url: "/research/"
       weight: -80
 
-    - name: "Categories"
-      identifier: "categories"
-      url: "/categories/"
-      weight: -70
-
 enableRobotsTXT: true
 canonifyURLs: true
 
