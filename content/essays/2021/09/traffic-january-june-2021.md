@@ -1,5 +1,5 @@
 ---
-title: "Traffic January 2021-June 2021"
+title: "Traffic: January 2021-June 2021"
 date: 2021-09-11T19:20:00+01:00
 draft: false
 authors: Hugo Martins
