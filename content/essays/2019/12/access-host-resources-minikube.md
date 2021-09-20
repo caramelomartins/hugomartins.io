@@ -6,6 +6,10 @@ categories:
 popular: true
 ---
 
+_**Note: Minikube now supports this. Read [Another Way of Accessing Host Resources in Minikube]({{< ref "essays/2021/09/another-way-of-accessing-host-resources-in-minikube.md" >}}) for an update.**_
+
+---
+
 This title is self-explanatory but, in any case, how can I access host resources in `minikube`? It seems straightforward but after digging up through the internet, it seems that it isn't as easy as it ought to be. <!--more-->
 
 I tried answering this question this week and it took me far longer than I was expecting. There are two directions of communication between pods in a `minikube` cluster and their host machine: from the pods to the host machine and from the host machine to a specific pod. From host to pod seems to be easier, what with all the endless Kubernetes tutorials on how to expose ports in pods. Communicating from within a pod with the host machine seems to be more of a mess.
