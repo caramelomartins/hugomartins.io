@@ -7,7 +7,7 @@ authors: Hugo Martins
 categories: [ devops ]
 ---
 
-Last month, I wrote a summary about the [Three Ways of DevOps](http://localhost:1313/essays/2021/01/three-ways-of-devops/), after having read [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002). In that essay, I summarized the three sets of guiding principles that constitute the essential  structure of DevOps: 
+Last month, I wrote a summary about the [Three Ways of DevOps]({{< ref  "/essays/2021/01/three-ways-of-devops" >}}), after having read [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002). In that essay, I summarized the three sets of guiding principles that constitute the essential  structure of DevOps: 
 
 - _The Principles of Flow_;
 - _The Principles of Feedback_;
@@ -25,7 +25,8 @@ Improvement in delivery speed, which is the focus of _The Principles of Flow_, i
 
 1. _Make Our Work Visible_: Ensure that all the work taking place is visible, in queues, to all stakeholders to allow for speedy organization and prioritization. Making work visible also eases the focus of teams because everyone will know, at all times, what the priorities are. An example of this is having work displayed in Kanban boards with each column representing the different sections of the value stream (e.g. development, ops and QA).
 2. _Limit Work in Progress_: Limiting work-in-progress avoids interruptions throughout the day, increasing productivity. It also sets clear expectations and priorities, avoiding multitasking incentives.
-3. _Reduce Batch Sizes_: Traditional approaches, such as _waterfall_, rely on large batches of work having to be complete before starting sequential large batches of work. It has been demonstrated by now that large batches of work reduce flow and decrease quality, with small batches of work being preferable.
+3. _Reduce Batch Sizes_: Traditional approaches, such as _waterfall_, rely on large batches of work having to be complete before starting sequential large batches of work. It has been demonstrated by now that large batches of work reduce flow and decrease quality, with small batches of work being p
+erable.
 4. _Reduce Number of Handoffs_: Each time work passes from one team to another requires a lot of communication and creates potential moments where work will be stopped, waiting for _something_ to be resolved, and reduces knowledge and context that inevitably will not be transferred between teams. Reducing the number of handoffs required between teams improves flow and overall quality of work.
 5. _Eliminate Waste in the Value Stream_: Removing any obstacles to making work progress, no matter what they are. Examples of waste are: partially done work, unnecessary processes, manual and non-standard work, context switching and extra features.
 
