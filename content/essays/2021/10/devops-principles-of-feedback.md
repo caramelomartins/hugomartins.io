@@ -1,5 +1,5 @@
 ---
-title: "Devops Principles of Feedback: Understanding What's Going On"
+title: "DevOps Principles of Feedback: Understanding What's Going On"
 date: 2021-10-04
 draft: false
 summary: A summary of the principles behind enabling a “fast and constant” flow of feedback from production all the way back to engineers.
