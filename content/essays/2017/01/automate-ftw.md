@@ -9,7 +9,7 @@ categories:
 
 I recently changed my blog from [Jekyll](https://jekyllrb.com/) to [Hugo](https://gohugo.io/) because it's fast, has custom support theme, **shares my name** and I never got along with Jekyll, honestly.
 
-With changing my configuration I had to make some changes to the workflow I used with my blog and writing. With that in mind I created a new repository - [website](https://github.com/caramelomartins/website) - which holds the actual source code that Hugo takes to build the website. The website is then hosted with Github Pages with a custom theme at [hugomartins.io](http://hugomartins.io).
+With changing my configuration I had to make some changes to the workflow I used with my blog and writing. With that in mind I created a new repository - [website](https://github.com/caramelomartins/website) - which holds the actual source code that Hugo takes to build the website. The website is then hosted with Github Pages with a custom theme at [hugomartins.io](https://hugomartins.io).
 
 With this new setup in mind I got tired really fast of deploying the compiled code from one repository to another and because I'm lazy I decided to automate the deployiment with a simple script called [deploy-sh](https://github.com/caramelomartins/website/blob/master/scripts/deploy.sh).
 

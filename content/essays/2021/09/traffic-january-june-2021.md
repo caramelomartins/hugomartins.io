@@ -15,10 +15,10 @@ In total, from January to June, there were 1865 unique visitors and 2596 pagevie
 
 Top Essays:
 
-1. [Building a Private Terraform Registry](https://hugomartins.io/essays/2021/01/build-a-terraform-private-registry/)
-2. [How to Access Host Resources in Minikube Pods?](https://hugomartins.io/essays/2019/12/access-host-resources-minikube/)
-3. [Understanding Differences Between List and MutableList in Kotlin](https://hugomartins.io/essays/2021/03/understanding-differences-between-list-and-mutablelist-in-kotlin/)
-4. [Using require and check Functions in Kotlin](https://hugomartins.io/essays/2021/02/using-require-and-check-in-kotlin/)
-5. [How To Pass Multiple Parameters To Same Value in Query Strings](https://hugomartins.io/essays/2021/02/how-to-pass-multiple-values-to-http-query-parameter/)
+1. [Building a Private Terraform Registry]({{< ref "/essays/2021/01/build-a-terraform-private-registry" >}})
+2. [How to Access Host Resources in Minikube Pods?]({{< ref "/essays/2019/12/access-host-resources-minikube" >}})
+3. [Understanding Differences Between List and MutableList in Kotlin]({{< ref "/essays/2021/03/understanding-differences-between-list-and-mutablelist-in-kotlin" >}})
+4. [Using require and check Functions in Kotlin]({{< ref "/essays/2021/02/using-require-and-check-in-kotlin" >}})
+5. [How To Pass Multiple Parameters To Same Value in Query Strings]({{< ref "/essays/2021/02/how-to-pass-multiple-values-to-http-query-parameter" >}})
 
-All of these, except for [How to Access Host Resources in Minikube Pods?](https://hugomartins.io/essays/2019/12/access-host-resources-minikube/) (2019), have been written throughout the period of January to July which is an important signal for me that some of the new stuff also interests readers.
+All of these, except for [How to Access Host Resources in Minikube Pods?]({{< ref "/essays/2019/12/access-host-resources-minikube" >}}) (2019), have been written throughout the period of January to July which is an important signal for me that some of the new stuff also interests readers.

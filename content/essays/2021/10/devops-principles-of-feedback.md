@@ -7,7 +7,7 @@ authors: Hugo Martins
 categories: [ devops ]
 ---
 
-A few months ago, I've written at length about DevOps themes, in essays such as [Three Ways of DevOps](https://hugomartins.io/essays/2021/01/three-ways-of-devops/) and [DevOps Principles of Flow: Deliver Faster](https://hugomartins.io/essays/2021/02/devops-principles-and-practices-of-flow/), based on reading [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002). Since then, I've had this essay half-baked, sitting on my drafts and haven't been able to complete it up until now.
+A few months ago, I've written at length about DevOps themes, in essays such as [Three Ways of DevOps]({{< ref "/essays/2021/01/three-ways-of-devops" >}}) and [DevOps Principles of Flow: Deliver Faster]({{< ref "/essays/2021/02/devops-principles-and-practices-of-flow" >}}), based on reading [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002). Since then, I've had this essay half-baked, sitting on my drafts and haven't been able to complete it up until now.
 
 In this essay, I want to focus our attention on _The Principles of Feedback_.  I've previously summarized them as:
 
