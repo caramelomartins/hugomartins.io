@@ -3,7 +3,7 @@ title: "Certified Kubernetes Application Developer (CKAD) in 2022"
 date: 2022-02-06
 draft: false
 authors: Hugo Martins
-summary: ""
+summary: "Thinking about facing 'Certified Kubernetes Application Developer (CKAD)' in 2022 and sharing snippets or notes I write during my studies."
 categories: ["kubernetes"]
 popular: false
 ---
