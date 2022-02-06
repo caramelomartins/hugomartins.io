@@ -5,6 +5,7 @@ draft: false
 authors: Hugo Martins
 categories: [kubecon, kubernetes]
 summary: "Stream of consciousness notes about my experience during KubeCon Europe 2021 and cool things I've learned or enjoyed."
+series: ["kubecon2021"]
 ---
 
 ![kubecon-logo](https://raw.githubusercontent.com/cncf/artwork/master/other/kubecon-cloudnativecon/2021-eu-virtual/color/kubecon-eu-2021-color.png)

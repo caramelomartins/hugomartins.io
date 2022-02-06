@@ -20,20 +20,25 @@ menu:
       url: "/essays/"
       weight: -110
 
+    - name: "Series"
+      identifier: "Series"
+      url: "/series/"
+      weight: -100
+
     - name: "About"
       identifier: "about"
       url: "/about/"
-      weight: -100
+      weight: -90
 
     - name: "Code"
       identifier: "code"
       url: "/code/"
-      weight: -90
+      weight: -80
 
     - name: "Research"
       identifier: "research"
       url: "/research/"
-      weight: -80
+      weight: -70
 
 enableRobotsTXT: true
 canonifyURLs: true
@@ -47,3 +52,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
