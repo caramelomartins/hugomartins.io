@@ -5,6 +5,7 @@ draft: false
 authors: Hugo Martins
 summary: "Thinking about studying for 'Certified Kubernetes Application Developer (CKAD)' in 2022 and sharing snippets or notes I write during my studies."
 categories: ["kubernetes"]
+series: ["ckad"]
 popular: false
 ---
 

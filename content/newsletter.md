@@ -3,7 +3,7 @@ draft: false
 title: "Newsletter"
 ---
 
-I've been writing a monthly newsletter called _Disposable Archetypes_ for a few months. Mostly about software, infrastructure and computer science. Occasionally about books and culture. It also includes a recap of the writing I've done throughout that month. 
+I've been writing a sporadic newsletter called _Disposable Archetypes_ for a few months. Mostly about software, infrastructure and computer science. Occasionally about books and culture. It also includes a recap of the writing I've done throughout that month. 
 
 If you believe you might be interested in reading it, you should subscribe:
 
