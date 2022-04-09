@@ -55,7 +55,7 @@ Results will differ from cluster to cluster, and between Kubernetes versions. We
 
 `kind` represents the kind of object that is specified via a manifest. Each kind of resource will be available on a particular API. This makes it essential that the specified `kind` and `apiVersion`  match on a specific manifest.
 
-We can inspect which `kind` we can use for objects by executing `kubectl api-resources:
+We can inspect which `kind` we can use for objects by executing `kubectl api-resources`:
 
 ```
 kubectl api-resources
