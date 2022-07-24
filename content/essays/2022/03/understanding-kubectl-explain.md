@@ -1,5 +1,5 @@
 ---
-title: "'kubectl explain' Explained"
+title: "Understanding 'kubectl explain'"
 date: 2022-03-29
 draft: false
 authors: Hugo Martins
