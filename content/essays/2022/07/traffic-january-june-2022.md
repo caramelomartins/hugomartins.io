@@ -9,7 +9,7 @@ summary: "A few notes on the traffic this website has received between January a
 
 Last year I started publishing short summaries about the traffic this website receives. You can see the initial reports for [January to June 2021](https://hugomartins.io/essays/2021/09/traffic-january-june-2021/) and [July to December 2021](https://hugomartins.io/essays/2022/01/traffic-july-december-2021/). This year I'm trying to keep doing just that. Here's the traffic this website received during the initial semester of 2022.
 
-![[Pasted image 20220724172020.png]]
+![Stats](/images/Stats-January-June-2022.png)
 
 In total, from January to June 2022, there were 13127 unique visitors and 15156 pageviews (84/day). Google was where most traffic came from, followed by Bing, DuckDuckGo and Yandex. Compared with the previous six months, pageviews per day were up 1.7x, which I attribute to the compounding effect of Google redirecting more traffic to the website since around October of last year.
 
