@@ -9,7 +9,7 @@ summary: "A few notes on the traffic this website has received between July and 
 
 I’ve kept this tradition of looking back at the traffic every six months since 2021 ([here](https://hugomartins.io/essays/2022/07/traffic-january-june-2022/) and [here](https://hugomartins.io/essays/2022/01/traffic-july-december-2021/)). This time, it also marks the end of the year, in terms of traffic, which makes this review two-fold: a six-month review along with a yearly review.
 
-![Stats](/images/Stats-July-December-2022)
+![Stats](/images/Stats-July-December-2022.png)
 
 In total, from July 2022 to December 2022, there were 11868 visitors and 13517 pageviews (~73/day). Google is still the biggest source of traffic, followed by Bing and DuckDuckGo. Compared with the previous month, visitors were down 10%, while pageviews were down 12%.
 
