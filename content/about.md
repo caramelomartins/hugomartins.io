@@ -11,7 +11,7 @@ I'm Hugo Martins, a Software and Infrastructure Engineer from Lisbon, Portugal.
 
 I like to build and break things. Lately, I’ve been working on tools that improve developer’s lives and productivity. Sometimes I also dabble in automating stuff and optimizing infrastructure. These days I write Python, Go and Kotlin.
 
-Currently, I'm a Software Engineer at [Datadog](https://www.datadoghq.com/). Previously, Senior Site Reliability Engineer at [Talkdesk](https://www.talkdesk.com/) and Site Reliability Engineer at [Claranet](http://www.claranet.co.uk/). I have a Bachelor's in Computer Science and a Master's in Information and Business Systems. You can review some of my projects in the [Code](/code/) and [Research](/research/) sections.
+Currently, I'm a Senior Software Engineer at [Datadog](https://www.datadoghq.com/). Previously, Senior Site Reliability Engineer at [Talkdesk](https://www.talkdesk.com/) and Site Reliability Engineer at [Claranet](http://www.claranet.co.uk/). I have a Bachelor's in Computer Science and a Master's in Information and Business Systems. You can review some of my projects in the [Code](/code/) and [Research](/research/) sections.
 
 ## About This Site
 
