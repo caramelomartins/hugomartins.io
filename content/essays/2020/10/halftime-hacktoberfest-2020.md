@@ -6,7 +6,7 @@ authors: Hugo Martins
 categories: [hacktoberfest]
 ---
 
-Even though [shitoberfest](https://twitter.com/shitoberfest) threatened to ruin Hacktoberfest 2020, I still pushed forward and I'm participating in it, as usual. I've written about my participation in [2016]({{< ref "/essays/2016/10/hacktoberfest-the-end" >}}) and [2019]({{< ref "/essays/2019/12/minor-followup-on-hacktoberfest" >}}). In both I have failed (0 PRs in 2016 and 3 PRs in 2019), I have succeeded in 2018 and it has introduced me to a few open-source projects - for example, `pytest`.
+Even though [shitoberfest](https://ongchinhwee.me/shitoberfest-ruin-hacktoberfest/) threatened to ruin Hacktoberfest 2020, I still pushed forward and I'm participating in it, as usual. I've written about my participation in [2016]({{< ref "/essays/2016/10/hacktoberfest-the-end" >}}) and [2019]({{< ref "/essays/2019/12/minor-followup-on-hacktoberfest" >}}). In both I have failed (0 PRs in 2016 and 3 PRs in 2019), I have succeeded in 2018 and it has introduced me to a few open-source projects - for example, `pytest`.
 
 We are now halfway into Hacktoberfest 2020 and I have submitted 2 PRs - one already approved and another under review. To start, I submitted a quick PR to a project I maintain ([awesome-linters](https://awesome-linters.hugomartins.io/)) to resolve a simple grammatical error that a user spotted. Since the user didn't want to open the PR, I ended up creating the PR and accepting it as an Hacktoberfest contribution - all in all I have to maintain it so I thought it _kind of made sense_.
 
